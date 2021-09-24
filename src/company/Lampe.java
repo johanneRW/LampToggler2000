@@ -47,19 +47,17 @@ public class Lampe {
 
 
 
-    public String vælgLampe(Lampe selected) {
+    public void trykPåKontakt (Lampe selected) {
         if (slukket) {
             slukket = false;
-            return "Lampe" + selected + " er tændt";
         } else {
             slukket = true;
-            return "Lampe" + selected + " er slukket";
         }
     }
 
     @Override
     public String toString() {
-        if (slukket==true){
+        if (slukket==false){
                 status = " slukket";}
                 else {
                     status = " tændt";}

@@ -26,8 +26,9 @@ public class Main {
 
             if (lampenummer==1){selected=lampe1;}
             else if (lampenummer == 2) {selected=lampe2;}
-            else if (lampenummer == 3) {selected=lampe2;}
-            else if (lampenummer == 4) {selected=lampe2;}
+            else if (lampenummer == 3) {selected=lampe3;}
+            else if (lampenummer == 4) {selected=lampe4;}
+            else if (lampenummer == 5) {selected=lampe5;}
             selected.trykPåKontakt();
 
 
