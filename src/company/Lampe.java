@@ -2,6 +2,9 @@ package company;
 
 import java.util.Scanner;
 
+
+
+
 public class Lampe {
     Scanner selected = new Scanner(System.in);
     private boolean slukket;
@@ -9,9 +12,6 @@ public class Lampe {
     private int antalTryk;
     private String lampeNavn;
     private String status;
-
-
-
 
     public Lampe(boolean slukket) {
         this.slukket = slukket;
@@ -22,6 +22,10 @@ public class Lampe {
         this.lampeNavn=lampeNavn;
         antalLamper++;
 
+    }
+
+    public String getLampeNavn() {
+        return lampeNavn;
     }
 
     public void trykPåKontakt() {
