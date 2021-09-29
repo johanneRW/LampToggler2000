@@ -2,7 +2,7 @@ package company;
 
 import java.util.Scanner;
 
-public class Main {
+public class LampToggler2000 {
 
     public static void main(String[] args) {
         Lampe lampe1 =new Lampe("lampe1");

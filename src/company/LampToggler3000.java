@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class LampToggler3000 {
 
-    // TODO: Make list of lamps
+    // Make list of lamps
     Lampe skrivebord = new Lampe("skrivebord");
     Lampe loft = new Lampe("loft");
     Lampe seng = new Lampe("seng");
     Lampe køkken = new Lampe("køkken");
     Lampe stue = new Lampe("stue");
 
-    // TODO: Initialize list of lamps
+    // Initialize list of lamps
     Lampe[] lampNames = {skrivebord, loft, seng, køkken, stue};
     ArrayList<Lampe> lampList = new ArrayList<>(List.of(lampNames));
 
@@ -78,23 +78,23 @@ public class LampToggler3000 {
 
     public void listLamps() {
         System.out.println("These lamps are currently in the system: ");
-        // TODO: List lamps and their status
+        // List lamps and their status
 
         System.out.println(lampList);
     }
 
 
     public void addLamp(String lampName) {
-        // TODO: create new lamp with the name lampName
+        // create new lamp with the name lampName
+        // add the new lamp to the list of lamps
         Lampe lampe = new Lampe(lampName);
-        // TODO: add the new lamp to the list of lamps
         lampList.add(lampe);
     }
 
     public void removeLamp(String lampName) {
-        // TODO: Find the lamp with the given name in the list of lamps
-        // TODO: Remove that lamp from the list of lamps (if it exists)
-        // TODO: Output error-message if lamp doesn't exist
+        // Find the lamp with the given name in the list of lamps
+        // Remove that lamp from the list of lamps (if it exists)
+        // Output error-message if lamp doesn't exist
         boolean found = false;
         for (int i = 0; i < lampList.size(); i++) {
             Lampe lampe = lampList.get(i);
@@ -109,9 +109,9 @@ public class LampToggler3000 {
     }
 
     public void toggleLamp(String lampName) {
-        // TODO: Find the lamp with the given name in the list of lamps
-        // TODO: Toggle the status of that lamp
-        // TODO: Output error-message if lamp doesn't exis
+        // Find the lamp with the given name in the list of lamps
+        // Toggle the status of that lamp
+        // Output error-message if lamp doesn't exis
         boolean found = false;
         for (int i = 0; i < lampList.size(); i++) {
             Lampe lampe = lampList.get(i);
@@ -125,9 +125,9 @@ public class LampToggler3000 {
         }
     }
     public void getLampStatus(String lampName) {
-        // TODO: Find the lamp with the given name in the list of lamps
-        // TODO: Get the status of that lamp, and print it
-        // TODO: Output error-message if lamp doesn't exist
+        // Find the lamp with the given name in the list of lamps
+        // Get the status of that lamp, and print it
+        // Output error-message if lamp doesn't exist
         boolean found = false;
         for (int i = 0; i < lampList.size(); i++) {
             Lampe lampe = lampList.get(i);
